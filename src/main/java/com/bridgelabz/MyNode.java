@@ -1,19 +1,18 @@
 package com.bridgelabz;
 //welcome to LinkedList using generics
-public class MyNode<K> {
+public class MyNode<K> implements INode<K>{
     private K key;
-    private MyNode next;
+    private INode next;
 
     public MyNode(K key) {
         this.key = key;
         this.next = null;
     }
-
-    public MyNode getNext() {
+    public INode getNext() {
         return next;
     }
 
-    public void setNext(MyNode next) {
+    public void setNext(INode next) {
         this.next = next;
     }
 
@@ -25,3 +24,4 @@ public class MyNode<K> {
         this.key = key;
     }
 }
+
